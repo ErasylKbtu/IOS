@@ -1,0 +1,301 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="profile-vc">
+    <device id="retina6_12" orientation="portrait" appearance="light" />
+    <dependencies>
+        <deployment identifier="iOS" />
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084" />
+        <capability name="Safe area layout guides" minToolsVersion="9.0" />
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0" />
+    </dependencies>
+    <scenes>
+        <scene sceneID="profile-vc-scene">
+            <objects>
+                <viewController id="profile-vc" customClass="ProfileViewController" customModule="Assignment7" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="root-view">
+                        <rect key="frame" x="0" y="0" width="393" height="852" />
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" />
+                        <color key="backgroundColor" red="0.9490196078431372" green="0.9490196078431372" blue="0.9725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB" />
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" alwaysBounceVertical="NO" contentInsetAdjustmentBehavior="never" translatesAutoresizingMaskIntoConstraints="NO" id="profile-scroll" userLabel="Safe-area scroll view">
+                                <rect key="frame" x="0" y="59" width="393" height="759" />
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="profile-content" userLabel="Profile content - side margins 16">
+                                        <rect key="frame" x="16" y="0" width="361" height="522" />
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="avatar-view" userLabel="Avatar 96 x 96" clipsSubviews="YES">
+                                                <rect key="frame" x="132.5" y="32" width="96" height="96" />
+                                                <color key="backgroundColor" red="0.9137254901960784" green="0.9058823529411765" blue="0.984313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB" />
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <real key="value" value="48" />
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AB" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="1" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="initials-label">
+                                                        <rect key="frame" x="0" y="0" width="96" height="96" />
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="34" />
+                                                        <color key="textColor" red="0.23137254901960785" green="0.2" blue="0.6705882352941176" alpha="1" colorSpace="custom" customColorSpace="sRGB" />
+                                                        <nil key="highlightedColor" />
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="initials-label" firstAttribute="leading" id="c-0001" secondItem="avatar-view" secondAttribute="leading" />
+                                                    <constraint firstItem="initials-label" firstAttribute="trailing" id="c-0002" secondItem="avatar-view" secondAttribute="trailing" />
+                                                    <constraint firstItem="initials-label" firstAttribute="top" id="c-0003" secondItem="avatar-view" secondAttribute="top" />
+                                                    <constraint firstItem="initials-label" firstAttribute="bottom" id="c-0004" secondItem="avatar-view" secondAttribute="bottom" />
+                                                    <constraint firstItem="avatar-view" firstAttribute="width" id="c-0005" constant="96" />
+                                                    <constraint firstItem="avatar-view" firstAttribute="height" id="c-0006" constant="96" />
+                                                </constraints>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aigerim Bekova" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="name-label">
+                                                <rect key="frame" x="0" y="144" width="361" height="29" />
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24" />
+                                                <color key="textColor" red="0.10980392156862745" green="0.10980392156862745" blue="0.11764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB" />
+                                                <nil key="highlightedColor" />
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iOS Developer · Almaty" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="1" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="subtitle-label">
+                                                <rect key="frame" x="0" y="177" width="361" height="20" />
+                                                <fontDescription key="fontDescription" type="system" pointSize="16" />
+                                                <color key="textColor" red="0.4235294117647059" green="0.4235294117647059" blue="0.4392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB" />
+                                                <nil key="highlightedColor" />
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="stats-card" userLabel="Stats - three equal columns">
+                                                <rect key="frame" x="0" y="221" width="361" height="74" />
+                                                <color key="backgroundColor" red="1.0" green="1.0" blue="1.0" alpha="1" colorSpace="custom" customColorSpace="sRGB" />
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <real key="value" value="16" />
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="column-0" userLabel="Posts column">
+                                                        <rect key="frame" x="0.0" y="0" width="120.33333333333333" height="74" />
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="128" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="1" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="stat-0">
+                                                                <rect key="frame" x="0" y="14" width="120.33333333333333" height="27" />
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22" />
+                                                                <color key="textColor" red="0.10980392156862745" green="0.10980392156862745" blue="0.11764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB" />
+                                                                <nil key="highlightedColor" />
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Posts" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="1" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="caption-0">
+                                                                <rect key="frame" x="0" y="43" width="120.33333333333333" height="17" />
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14" />
+                                                                <color key="textColor" red="0.4235294117647059" green="0.4235294117647059" blue="0.4392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB" />
+                                                                <nil key="highlightedColor" />
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="stat-0" firstAttribute="leading" id="c-0007" secondItem="column-0" secondAttribute="leading" />
+                                                            <constraint firstItem="stat-0" firstAttribute="trailing" id="c-0008" secondItem="column-0" secondAttribute="trailing" />
+                                                            <constraint firstItem="caption-0" firstAttribute="leading" id="c-0009" secondItem="column-0" secondAttribute="leading" />
+                                                            <constraint firstItem="caption-0" firstAttribute="trailing" id="c-0010" secondItem="column-0" secondAttribute="trailing" />
+                                                            <constraint firstItem="stat-0" firstAttribute="top" id="c-0011" secondItem="column-0" secondAttribute="top" constant="14" />
+                                                            <constraint firstItem="caption-0" firstAttribute="top" id="c-0012" secondItem="stat-0" secondAttribute="bottom" constant="2" />
+                                                            <constraint firstItem="column-0" firstAttribute="bottom" id="c-0013" secondItem="caption-0" secondAttribute="bottom" constant="14" />
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="column-1" userLabel="Followers column">
+                                                        <rect key="frame" x="120.33333333333333" y="0" width="120.33333333333333" height="74" />
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4.2K" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="1" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="stat-1">
+                                                                <rect key="frame" x="0" y="14" width="120.33333333333333" height="27" />
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22" />
+                                                                <color key="textColor" red="0.10980392156862745" green="0.10980392156862745" blue="0.11764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB" />
+                                                                <nil key="highlightedColor" />
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Followers" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="1" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="caption-1">
+                                                                <rect key="frame" x="0" y="43" width="120.33333333333333" height="17" />
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14" />
+                                                                <color key="textColor" red="0.4235294117647059" green="0.4235294117647059" blue="0.4392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB" />
+                                                                <nil key="highlightedColor" />
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="stat-1" firstAttribute="leading" id="c-0014" secondItem="column-1" secondAttribute="leading" />
+                                                            <constraint firstItem="stat-1" firstAttribute="trailing" id="c-0015" secondItem="column-1" secondAttribute="trailing" />
+                                                            <constraint firstItem="caption-1" firstAttribute="leading" id="c-0016" secondItem="column-1" secondAttribute="leading" />
+                                                            <constraint firstItem="caption-1" firstAttribute="trailing" id="c-0017" secondItem="column-1" secondAttribute="trailing" />
+                                                            <constraint firstItem="stat-1" firstAttribute="top" id="c-0018" secondItem="column-1" secondAttribute="top" constant="14" />
+                                                            <constraint firstItem="caption-1" firstAttribute="top" id="c-0019" secondItem="stat-1" secondAttribute="bottom" constant="2" />
+                                                            <constraint firstItem="column-1" firstAttribute="bottom" id="c-0020" secondItem="caption-1" secondAttribute="bottom" constant="14" />
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="column-2" userLabel="Following column">
+                                                        <rect key="frame" x="240.66666666666666" y="0" width="120.33333333333333" height="74" />
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="312" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="1" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="stat-2">
+                                                                <rect key="frame" x="0" y="14" width="120.33333333333333" height="27" />
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22" />
+                                                                <color key="textColor" red="0.10980392156862745" green="0.10980392156862745" blue="0.11764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB" />
+                                                                <nil key="highlightedColor" />
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Following" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="1" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="caption-2">
+                                                                <rect key="frame" x="0" y="43" width="120.33333333333333" height="17" />
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14" />
+                                                                <color key="textColor" red="0.4235294117647059" green="0.4235294117647059" blue="0.4392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB" />
+                                                                <nil key="highlightedColor" />
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="stat-2" firstAttribute="leading" id="c-0021" secondItem="column-2" secondAttribute="leading" />
+                                                            <constraint firstItem="stat-2" firstAttribute="trailing" id="c-0022" secondItem="column-2" secondAttribute="trailing" />
+                                                            <constraint firstItem="caption-2" firstAttribute="leading" id="c-0023" secondItem="column-2" secondAttribute="leading" />
+                                                            <constraint firstItem="caption-2" firstAttribute="trailing" id="c-0024" secondItem="column-2" secondAttribute="trailing" />
+                                                            <constraint firstItem="stat-2" firstAttribute="top" id="c-0025" secondItem="column-2" secondAttribute="top" constant="14" />
+                                                            <constraint firstItem="caption-2" firstAttribute="top" id="c-0026" secondItem="stat-2" secondAttribute="bottom" constant="2" />
+                                                            <constraint firstItem="column-2" firstAttribute="bottom" id="c-0027" secondItem="caption-2" secondAttribute="bottom" constant="14" />
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="divider-1">
+                                                        <rect key="frame" x="119.83333333333333" y="16" width="1" height="42" />
+                                                        <color key="backgroundColor" red="0.8941176470588236" green="0.8941176470588236" blue="0.9254901960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB" />
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="divider-2">
+                                                        <rect key="frame" x="240.16666666666666" y="16" width="1" height="42" />
+                                                        <color key="backgroundColor" red="0.8941176470588236" green="0.8941176470588236" blue="0.9254901960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB" />
+                                                    </view>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="column-0" firstAttribute="top" id="c-0028" secondItem="stats-card" secondAttribute="top" />
+                                                    <constraint firstItem="column-0" firstAttribute="bottom" id="c-0029" secondItem="stats-card" secondAttribute="bottom" />
+                                                    <constraint firstItem="column-0" firstAttribute="leading" id="c-0030" secondItem="stats-card" secondAttribute="leading" />
+                                                    <constraint firstItem="column-1" firstAttribute="top" id="c-0031" secondItem="stats-card" secondAttribute="top" />
+                                                    <constraint firstItem="column-1" firstAttribute="bottom" id="c-0032" secondItem="stats-card" secondAttribute="bottom" />
+                                                    <constraint firstItem="column-1" firstAttribute="leading" id="c-0033" secondItem="column-0" secondAttribute="trailing" />
+                                                    <constraint firstItem="column-1" firstAttribute="width" id="c-0034" secondItem="column-0" secondAttribute="width" userLabel="Equal column widths" />
+                                                    <constraint firstItem="column-2" firstAttribute="top" id="c-0035" secondItem="stats-card" secondAttribute="top" />
+                                                    <constraint firstItem="column-2" firstAttribute="bottom" id="c-0036" secondItem="stats-card" secondAttribute="bottom" />
+                                                    <constraint firstItem="column-2" firstAttribute="leading" id="c-0037" secondItem="column-1" secondAttribute="trailing" />
+                                                    <constraint firstItem="column-2" firstAttribute="width" id="c-0038" secondItem="column-0" secondAttribute="width" userLabel="Equal column widths" />
+                                                    <constraint firstItem="column-2" firstAttribute="trailing" id="c-0039" secondItem="stats-card" secondAttribute="trailing" />
+                                                    <constraint firstItem="divider-1" firstAttribute="centerX" id="c-0040" secondItem="column-1" secondAttribute="leading" />
+                                                    <constraint firstItem="divider-1" firstAttribute="top" id="c-0041" secondItem="stats-card" secondAttribute="top" constant="16" />
+                                                    <constraint firstItem="divider-1" firstAttribute="bottom" id="c-0042" secondItem="stats-card" secondAttribute="bottom" constant="-16" />
+                                                    <constraint firstItem="divider-1" firstAttribute="width" id="c-0043" constant="1" />
+                                                    <constraint firstItem="divider-2" firstAttribute="centerX" id="c-0044" secondItem="column-2" secondAttribute="leading" />
+                                                    <constraint firstItem="divider-2" firstAttribute="top" id="c-0045" secondItem="stats-card" secondAttribute="top" constant="16" />
+                                                    <constraint firstItem="divider-2" firstAttribute="bottom" id="c-0046" secondItem="stats-card" secondAttribute="bottom" constant="-16" />
+                                                    <constraint firstItem="divider-2" firstAttribute="width" id="c-0047" constant="1" />
+                                                </constraints>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="custom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="follow-button">
+                                                <rect key="frame" x="0" y="311" width="174.5" height="48" />
+                                                <color key="backgroundColor" red="0.23137254901960785" green="0.2" blue="0.6705882352941176" alpha="1" colorSpace="custom" customColorSpace="sRGB" />
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17" />
+                                                <state key="normal" title="Follow">
+                                                    <color key="titleColor" red="1.0" green="1.0" blue="1.0" alpha="1" colorSpace="custom" customColorSpace="sRGB" />
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <real key="value" value="12" />
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="custom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="message-button">
+                                                <rect key="frame" x="186.5" y="311" width="174.5" height="48" />
+                                                <color key="backgroundColor" red="0.9137254901960784" green="0.9058823529411765" blue="0.984313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB" />
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17" />
+                                                <state key="normal" title="Message">
+                                                    <color key="titleColor" red="0.23137254901960785" green="0.2" blue="0.6705882352941176" alpha="1" colorSpace="custom" customColorSpace="sRGB" />
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <real key="value" value="12" />
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="about-card" userLabel="About - grows with text">
+                                                <rect key="frame" x="0" y="383" width="361" height="115" />
+                                                <color key="backgroundColor" red="1.0" green="1.0" blue="1.0" alpha="1" colorSpace="custom" customColorSpace="sRGB" />
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <real key="value" value="16" />
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ABOUT" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="1" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="about-heading">
+                                                        <rect key="frame" x="16" y="16" width="329" height="17" />
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14" />
+                                                        <color key="textColor" red="0.4235294117647059" green="0.4235294117647059" blue="0.4392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB" />
+                                                        <nil key="highlightedColor" />
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Building banking apps in Swift. I like clean architecture, coffee and long walks in the mountains around Almaty." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="about-label">
+                                                        <rect key="frame" x="16" y="41" width="329" height="58" />
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16" />
+                                                        <color key="textColor" red="0.10980392156862745" green="0.10980392156862745" blue="0.11764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB" />
+                                                        <nil key="highlightedColor" />
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="about-heading" firstAttribute="leading" id="c-0048" secondItem="about-card" secondAttribute="leading" constant="16" />
+                                                    <constraint firstItem="about-card" firstAttribute="trailing" id="c-0049" secondItem="about-heading" secondAttribute="trailing" constant="16" />
+                                                    <constraint firstItem="about-label" firstAttribute="leading" id="c-0050" secondItem="about-card" secondAttribute="leading" constant="16" />
+                                                    <constraint firstItem="about-card" firstAttribute="trailing" id="c-0051" secondItem="about-label" secondAttribute="trailing" constant="16" />
+                                                    <constraint firstItem="about-heading" firstAttribute="top" id="c-0052" secondItem="about-card" secondAttribute="top" constant="16" />
+                                                    <constraint firstItem="about-label" firstAttribute="top" id="c-0053" secondItem="about-heading" secondAttribute="bottom" constant="8" />
+                                                    <constraint firstItem="about-card" firstAttribute="bottom" id="c-0054" secondItem="about-label" secondAttribute="bottom" constant="16" />
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="avatar-view" firstAttribute="top" id="c-0055" secondItem="profile-content" secondAttribute="top" constant="32" />
+                                            <constraint firstItem="avatar-view" firstAttribute="centerX" id="c-0056" secondItem="profile-content" secondAttribute="centerX" />
+                                            <constraint firstItem="name-label" firstAttribute="leading" id="c-0057" secondItem="profile-content" secondAttribute="leading" />
+                                            <constraint firstItem="name-label" firstAttribute="trailing" id="c-0058" secondItem="profile-content" secondAttribute="trailing" />
+                                            <constraint firstItem="subtitle-label" firstAttribute="leading" id="c-0059" secondItem="profile-content" secondAttribute="leading" />
+                                            <constraint firstItem="subtitle-label" firstAttribute="trailing" id="c-0060" secondItem="profile-content" secondAttribute="trailing" />
+                                            <constraint firstItem="stats-card" firstAttribute="leading" id="c-0061" secondItem="profile-content" secondAttribute="leading" />
+                                            <constraint firstItem="stats-card" firstAttribute="trailing" id="c-0062" secondItem="profile-content" secondAttribute="trailing" />
+                                            <constraint firstItem="about-card" firstAttribute="leading" id="c-0063" secondItem="profile-content" secondAttribute="leading" />
+                                            <constraint firstItem="about-card" firstAttribute="trailing" id="c-0064" secondItem="profile-content" secondAttribute="trailing" />
+                                            <constraint firstItem="name-label" firstAttribute="top" id="c-0065" secondItem="avatar-view" secondAttribute="bottom" constant="16" />
+                                            <constraint firstItem="subtitle-label" firstAttribute="top" id="c-0066" secondItem="name-label" secondAttribute="bottom" constant="4" />
+                                            <constraint firstItem="stats-card" firstAttribute="top" id="c-0067" secondItem="subtitle-label" secondAttribute="bottom" constant="24" />
+                                            <constraint firstItem="stats-card" firstAttribute="height" id="c-0068" constant="74" />
+                                            <constraint firstItem="follow-button" firstAttribute="top" id="c-0069" secondItem="stats-card" secondAttribute="bottom" constant="16" />
+                                            <constraint firstItem="follow-button" firstAttribute="leading" id="c-0070" secondItem="profile-content" secondAttribute="leading" />
+                                            <constraint firstItem="follow-button" firstAttribute="height" id="c-0071" constant="48" />
+                                            <constraint firstItem="message-button" firstAttribute="top" id="c-0072" secondItem="follow-button" secondAttribute="top" />
+                                            <constraint firstItem="message-button" firstAttribute="height" id="c-0073" constant="48" />
+                                            <constraint firstItem="message-button" firstAttribute="leading" id="c-0074" secondItem="follow-button" secondAttribute="trailing" constant="12" />
+                                            <constraint firstItem="message-button" firstAttribute="trailing" id="c-0075" secondItem="profile-content" secondAttribute="trailing" />
+                                            <constraint firstItem="message-button" firstAttribute="width" id="c-0076" secondItem="follow-button" secondAttribute="width" userLabel="Equal button widths" />
+                                            <constraint firstItem="about-card" firstAttribute="top" id="c-0077" secondItem="follow-button" secondAttribute="bottom" constant="24" />
+                                            <constraint firstItem="profile-content" firstAttribute="bottom" id="c-0078" secondItem="about-card" secondAttribute="bottom" constant="24" />
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <viewLayoutGuide key="contentLayoutGuide" id="scroll-content-guide" />
+                                <viewLayoutGuide key="frameLayoutGuide" id="scroll-frame-guide" />
+                                <constraints>
+                                    <constraint firstItem="profile-content" firstAttribute="leading" id="c-0079" secondItem="scroll-content-guide" secondAttribute="leading" constant="16" />
+                                    <constraint firstItem="scroll-content-guide" firstAttribute="trailing" id="c-0080" secondItem="profile-content" secondAttribute="trailing" constant="16" />
+                                    <constraint firstItem="profile-content" firstAttribute="top" id="c-0081" secondItem="scroll-content-guide" secondAttribute="top" />
+                                    <constraint firstItem="scroll-content-guide" firstAttribute="bottom" id="c-0082" secondItem="profile-content" secondAttribute="bottom" />
+                                    <constraint firstItem="profile-content" firstAttribute="width" id="c-0083" secondItem="scroll-frame-guide" secondAttribute="width" constant="-32" userLabel="Viewport width minus side margins" />
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="safe-area" />
+                        <constraints>
+                            <constraint firstItem="profile-scroll" firstAttribute="leading" id="c-0084" secondItem="safe-area" secondAttribute="leading" />
+                            <constraint firstItem="profile-scroll" firstAttribute="trailing" id="c-0085" secondItem="safe-area" secondAttribute="trailing" />
+                            <constraint firstItem="profile-scroll" firstAttribute="top" id="c-0086" secondItem="safe-area" secondAttribute="top" />
+                            <constraint firstItem="profile-scroll" firstAttribute="bottom" id="c-0087" secondItem="safe-area" secondAttribute="bottom" />
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="initialsLabel" destination="initials-label" id="initialsLabel-outlet" />
+                        <outlet property="nameLabel" destination="name-label" id="nameLabel-outlet" />
+                        <outlet property="subtitleLabel" destination="subtitle-label" id="subtitleLabel-outlet" />
+                        <outlet property="postsLabel" destination="stat-0" id="postsLabel-outlet" />
+                        <outlet property="followersLabel" destination="stat-1" id="followersLabel-outlet" />
+                        <outlet property="followingLabel" destination="stat-2" id="followingLabel-outlet" />
+                        <outlet property="aboutLabel" destination="about-label" id="aboutLabel-outlet" />
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="first-responder" userLabel="First Responder" sceneMemberID="firstResponder" />
+            </objects>
+        </scene>
+    </scenes>
+</document>
