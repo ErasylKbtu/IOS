@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="player-vc">
+    <device id="retina6_12" orientation="portrait" appearance="dark" />
+    <dependencies>
+        <deployment identifier="iOS" />
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084" />
+        <capability name="Safe area layout guides" minToolsVersion="9.0" />
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0" />
+    </dependencies>
+    <scenes>
+        <scene sceneID="player-vc-scene">
+            <objects>
+                <viewController id="player-vc" customClass="PlayerViewController" customModule="MusicPlayer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="screen-view">
+                        <rect key="frame" x="0" y="0" width="393" height="852" />
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" />
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="fill" distribution="fill" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="root-stack" userLabel="Root - vertical / fill / 24">
+                                <rect key="frame" x="20" y="176.5" width="353" height="524" />
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" image="cover_after_hours" translatesAutoresizingMaskIntoConstraints="NO" id="cover-image" userLabel="Track cover - square">
+                                        <rect key="frame" x="0" y="0" width="353" height="353" />
+                                        <constraints>
+                                            <constraint firstItem="cover-image" firstAttribute="width" secondItem="cover-image" secondAttribute="height" multiplier="1:1" id="cover-square" userLabel="Cover aspect ratio 1:1" />
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <real key="value" value="24" />
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="fill" distribution="fill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="labels-stack" userLabel="Track info - vertical / fill / 6">
+                                        <rect key="frame" x="0" y="377" width="353" height="59" />
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="After Hours" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="title-label">
+                                                <rect key="frame" x="0" y="0" width="353" height="32" />
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26" />
+                                                <color key="textColor" red="0.9647058823529412" green="0.9686274509803922" blue="0.984313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB" />
+                                                <nil key="highlightedColor" />
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yerassyl · Electronic" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="artist-label">
+                                                <rect key="frame" x="0" y="38" width="353" height="21" />
+                                                <fontDescription key="fontDescription" type="system" pointSize="17" />
+                                                <color key="textColor" red="0.6" green="0.6431372549019608" blue="0.7254901960784313" alpha="1" colorSpace="custom" customColorSpace="sRGB" />
+                                                <nil key="highlightedColor" />
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="horizontal" alignment="fill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="controls-stack" userLabel="Controls - horizontal / equal widths / 16">
+                                        <rect key="frame" x="0" y="460" width="353" height="64" />
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="custom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="previous-button" userLabel="Previous track">
+                                                <rect key="frame" x="0.0" y="0" width="107.0" height="64" />
+                                                <color key="tintColor" red="0.9647058823529412" green="0.9686274509803922" blue="0.984313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB" />
+                                                <fontDescription key="fontDescription" type="system" pointSize="24" />
+                                                <state key="normal" image="backward.fill" catalog="system" />
+                                                <accessibility key="accessibilityConfiguration" label="Previous track">
+                                                    <accessibilityTraits key="traits" button="YES" />
+                                                </accessibility>
+                                                <connections>
+                                                    <action selector="previousTapped:" destination="player-vc" eventType="touchUpInside" id="previous-button-action" />
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="custom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="play-pause-button" userLabel="Play">
+                                                <rect key="frame" x="123.0" y="0" width="107.0" height="64" />
+                                                <color key="backgroundColor" red="0.5098039215686274" green="0.615686274509804" blue="1.0" alpha="1" colorSpace="custom" customColorSpace="sRGB" />
+                                                <color key="tintColor" red="0.06274509803921569" green="0.08235294117647059" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB" />
+                                                <fontDescription key="fontDescription" type="system" pointSize="24" />
+                                                <state key="normal" image="play.fill" catalog="system" />
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <real key="value" value="32" />
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <accessibility key="accessibilityConfiguration" label="Play">
+                                                    <accessibilityTraits key="traits" button="YES" />
+                                                </accessibility>
+                                                <connections>
+                                                    <action selector="playPauseTapped:" destination="player-vc" eventType="touchUpInside" id="play-pause-button-action" />
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="custom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="next-button" userLabel="Next track">
+                                                <rect key="frame" x="246.0" y="0" width="107.0" height="64" />
+                                                <color key="tintColor" red="0.9647058823529412" green="0.9686274509803922" blue="0.984313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB" />
+                                                <fontDescription key="fontDescription" type="system" pointSize="24" />
+                                                <state key="normal" image="forward.fill" catalog="system" />
+                                                <accessibility key="accessibilityConfiguration" label="Next track">
+                                                    <accessibilityTraits key="traits" button="YES" />
+                                                </accessibility>
+                                                <connections>
+                                                    <action selector="nextTapped:" destination="player-vc" eventType="touchUpInside" id="next-button-action" />
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="64" id="controls-height" userLabel="Controls height 64" />
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="safe-area" />
+                        <color key="backgroundColor" red="0.06274509803921569" green="0.08235294117647059" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB" />
+                        <constraints>
+                            <constraint firstItem="root-stack" firstAttribute="leading" secondItem="safe-area" secondAttribute="leading" constant="20" id="stack-leading" userLabel="Safe area leading 20" />
+                            <constraint firstItem="safe-area" firstAttribute="trailing" secondItem="root-stack" secondAttribute="trailing" constant="20" id="stack-trailing" userLabel="Safe area trailing 20" />
+                            <constraint firstItem="root-stack" firstAttribute="centerY" secondItem="safe-area" secondAttribute="centerY" id="stack-center-y" userLabel="Vertically centered in safe area" />
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="coverImageView" destination="cover-image" id="coverImageView-outlet" />
+                        <outlet property="titleLabel" destination="title-label" id="titleLabel-outlet" />
+                        <outlet property="artistLabel" destination="artist-label" id="artistLabel-outlet" />
+                        <outlet property="previousButton" destination="previous-button" id="previousButton-outlet" />
+                        <outlet property="playPauseButton" destination="play-pause-button" id="playPauseButton-outlet" />
+                        <outlet property="nextButton" destination="next-button" id="nextButton-outlet" />
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="player-responder" userLabel="First Responder" sceneMemberID="firstResponder" />
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cover_after_hours" width="1024" height="1024" />
+        <image name="backward.fill" catalog="system" width="25" height="19" />
+        <image name="play.fill" catalog="system" width="20" height="19" />
+        <image name="forward.fill" catalog="system" width="25" height="19" />
+    </resources>
+</document>

@@ -1,0 +1,438 @@
+// !$*UTF8*$!
+{
+  "archiveVersion" = "1";
+  "classes" = {
+  };
+  "objectVersion" = "56";
+  "objects" = {
+    "42252294BCDFB9159B2AB777" = {
+      "isa" = "PBXFileReference";
+      "lastKnownFileType" = "sourcecode.swift";
+      "path" = "AppDelegate.swift";
+      "sourceTree" = "<group>";
+    };
+    "B7A1D6E831C479F78C897056" = {
+      "isa" = "PBXBuildFile";
+      "fileRef" = "42252294BCDFB9159B2AB777";
+    };
+    "4EED221278CCE81C0D92382B" = {
+      "isa" = "PBXFileReference";
+      "lastKnownFileType" = "sourcecode.swift";
+      "path" = "SceneDelegate.swift";
+      "sourceTree" = "<group>";
+    };
+    "B7E4B36ED5FCCD3EB7612A01" = {
+      "isa" = "PBXBuildFile";
+      "fileRef" = "4EED221278CCE81C0D92382B";
+    };
+    "3ABDD51E4DC845F728BA4822" = {
+      "isa" = "PBXFileReference";
+      "lastKnownFileType" = "sourcecode.swift";
+      "path" = "Track.swift";
+      "sourceTree" = "<group>";
+    };
+    "E048BD1D9FA76D3B456CE2B8" = {
+      "isa" = "PBXBuildFile";
+      "fileRef" = "3ABDD51E4DC845F728BA4822";
+    };
+    "CDFB8838C36E0DD949D587FA" = {
+      "isa" = "PBXFileReference";
+      "lastKnownFileType" = "sourcecode.swift";
+      "path" = "TrackLibrary.swift";
+      "sourceTree" = "<group>";
+    };
+    "42750A1D08B7EC3A371CE0E8" = {
+      "isa" = "PBXBuildFile";
+      "fileRef" = "CDFB8838C36E0DD949D587FA";
+    };
+    "D064C684BD81BF68CFE4FFAF" = {
+      "isa" = "PBXFileReference";
+      "lastKnownFileType" = "sourcecode.swift";
+      "path" = "PlayerViewController.swift";
+      "sourceTree" = "<group>";
+    };
+    "A5B126568D9A00830245D547" = {
+      "isa" = "PBXBuildFile";
+      "fileRef" = "D064C684BD81BF68CFE4FFAF";
+    };
+    "786D182DF1B7EB68F15C7912" = {
+      "isa" = "PBXFileReference";
+      "lastKnownFileType" = "text.plist.xml";
+      "path" = "Info.plist";
+      "sourceTree" = "<group>";
+    };
+    "C5AEA1A21EFBFBD8E1803B63" = {
+      "isa" = "PBXFileReference";
+      "lastKnownFileType" = "file.storyboard";
+      "path" = "Base.lproj/Main.storyboard";
+      "sourceTree" = "<group>";
+    };
+    "83DA8083B9BD8A94B98B9482" = {
+      "isa" = "PBXBuildFile";
+      "fileRef" = "C5AEA1A21EFBFBD8E1803B63";
+    };
+    "7AB17999112F538ADDFCD6C1" = {
+      "isa" = "PBXFileReference";
+      "lastKnownFileType" = "file.storyboard";
+      "path" = "Base.lproj/LaunchScreen.storyboard";
+      "sourceTree" = "<group>";
+    };
+    "8F5C8B17FA73B8B290B058CA" = {
+      "isa" = "PBXBuildFile";
+      "fileRef" = "7AB17999112F538ADDFCD6C1";
+    };
+    "2B3CAED71CE6003807E7ABE1" = {
+      "isa" = "PBXFileReference";
+      "lastKnownFileType" = "folder.assetcatalog";
+      "path" = "Assets.xcassets";
+      "sourceTree" = "<group>";
+    };
+    "8F9ED1B89582662972867F0A" = {
+      "isa" = "PBXBuildFile";
+      "fileRef" = "2B3CAED71CE6003807E7ABE1";
+    };
+    "172F67A0301F510E990E3829" = {
+      "isa" = "PBXFileReference";
+      "lastKnownFileType" = "audio.mp4";
+      "path" = "after_hours.m4a";
+      "sourceTree" = "<group>";
+    };
+    "C7EFF6ECC58908D1C1E1B087" = {
+      "isa" = "PBXBuildFile";
+      "fileRef" = "172F67A0301F510E990E3829";
+    };
+    "43BFEF05E56482D997404E95" = {
+      "isa" = "PBXFileReference";
+      "lastKnownFileType" = "audio.mp4";
+      "path" = "almaty_sunrise.m4a";
+      "sourceTree" = "<group>";
+    };
+    "3E9D3FEEFBC82912EA9DF7D7" = {
+      "isa" = "PBXBuildFile";
+      "fileRef" = "43BFEF05E56482D997404E95";
+    };
+    "52FCF7E2925A2D2D9B6B2B9B" = {
+      "isa" = "PBXFileReference";
+      "lastKnownFileType" = "audio.mp4";
+      "path" = "blue_orbit.m4a";
+      "sourceTree" = "<group>";
+    };
+    "CF4414769D5F3E874C734145" = {
+      "isa" = "PBXBuildFile";
+      "fileRef" = "52FCF7E2925A2D2D9B6B2B9B";
+    };
+    "C736644118B059B44DBAB725" = {
+      "isa" = "PBXFileReference";
+      "lastKnownFileType" = "audio.mp4";
+      "path" = "city_lights.m4a";
+      "sourceTree" = "<group>";
+    };
+    "128A1361E7EFDE60FE55EA42" = {
+      "isa" = "PBXBuildFile";
+      "fileRef" = "C736644118B059B44DBAB725";
+    };
+    "35C2974690A2B57C87A0CA88" = {
+      "isa" = "PBXFileReference";
+      "lastKnownFileType" = "audio.mp4";
+      "path" = "cloud_nine.m4a";
+      "sourceTree" = "<group>";
+    };
+    "1D085CBD4D87DA087790D381" = {
+      "isa" = "PBXBuildFile";
+      "fileRef" = "35C2974690A2B57C87A0CA88";
+    };
+    "180442633A752DD7EF5975AF" = {
+      "isa" = "PBXFileReference";
+      "lastKnownFileType" = "audio.mp4";
+      "path" = "desert_wind.m4a";
+      "sourceTree" = "<group>";
+    };
+    "B6200888111C66D343EF06D9" = {
+      "isa" = "PBXBuildFile";
+      "fileRef" = "180442633A752DD7EF5975AF";
+    };
+    "7C4C444688C7C9DACC698E2D" = {
+      "isa" = "PBXFileReference";
+      "lastKnownFileType" = "audio.mp4";
+      "path" = "emerald_coast.m4a";
+      "sourceTree" = "<group>";
+    };
+    "0B97A13BDE01E805C1FC2F99" = {
+      "isa" = "PBXBuildFile";
+      "fileRef" = "7C4C444688C7C9DACC698E2D";
+    };
+    "4AC8514DADC4A865B1D1A9E2" = {
+      "isa" = "PBXFileReference";
+      "lastKnownFileType" = "audio.mp4";
+      "path" = "golden_hour.m4a";
+      "sourceTree" = "<group>";
+    };
+    "F3AE36DCDF64646C04D13D31" = {
+      "isa" = "PBXBuildFile";
+      "fileRef" = "4AC8514DADC4A865B1D1A9E2";
+    };
+    "2BF08C75E633028C84E2E5FD" = {
+      "isa" = "PBXFileReference";
+      "lastKnownFileType" = "audio.mp4";
+      "path" = "mountain_echo.m4a";
+      "sourceTree" = "<group>";
+    };
+    "FEDF5AC9D2EB92BBD5A8928F" = {
+      "isa" = "PBXBuildFile";
+      "fileRef" = "2BF08C75E633028C84E2E5FD";
+    };
+    "3F86FF5ADBC45F23927DCC69" = {
+      "isa" = "PBXFileReference";
+      "lastKnownFileType" = "audio.mp4";
+      "path" = "velvet_sky.m4a";
+      "sourceTree" = "<group>";
+    };
+    "78D507598A954EBBE60079C7" = {
+      "isa" = "PBXBuildFile";
+      "fileRef" = "3F86FF5ADBC45F23927DCC69";
+    };
+    "7CAED3FA02BA9480DC504EE2" = {
+      "isa" = "PBXGroup";
+      "children" = (
+        "172F67A0301F510E990E3829",
+        "43BFEF05E56482D997404E95",
+        "52FCF7E2925A2D2D9B6B2B9B",
+        "C736644118B059B44DBAB725",
+        "35C2974690A2B57C87A0CA88",
+        "180442633A752DD7EF5975AF",
+        "7C4C444688C7C9DACC698E2D",
+        "4AC8514DADC4A865B1D1A9E2",
+        "2BF08C75E633028C84E2E5FD",
+        "3F86FF5ADBC45F23927DCC69",
+      );
+      "path" = "Audio";
+      "sourceTree" = "<group>";
+    };
+    "A2B48B8798E44247609507D1" = {
+      "isa" = "PBXFileReference";
+      "explicitFileType" = "wrapper.application";
+      "includeInIndex" = "0";
+      "path" = "MusicPlayer.app";
+      "sourceTree" = "BUILT_PRODUCTS_DIR";
+    };
+    "E87DB23D664D0E90D0B7ED85" = {
+      "isa" = "PBXGroup";
+      "children" = (
+        "42252294BCDFB9159B2AB777",
+        "4EED221278CCE81C0D92382B",
+        "3ABDD51E4DC845F728BA4822",
+        "CDFB8838C36E0DD949D587FA",
+        "D064C684BD81BF68CFE4FFAF",
+        "786D182DF1B7EB68F15C7912",
+        "C5AEA1A21EFBFBD8E1803B63",
+        "7AB17999112F538ADDFCD6C1",
+        "2B3CAED71CE6003807E7ABE1",
+        "7CAED3FA02BA9480DC504EE2",
+      );
+      "path" = "MusicPlayer";
+      "sourceTree" = "<group>";
+    };
+    "88DD4B4037128BE02E9EBD28" = {
+      "isa" = "PBXGroup";
+      "children" = (
+        "A2B48B8798E44247609507D1",
+      );
+      "name" = "Products";
+      "sourceTree" = "<group>";
+    };
+    "35D1148E053C9E8C48E557DB" = {
+      "isa" = "PBXGroup";
+      "children" = (
+        "E87DB23D664D0E90D0B7ED85",
+        "88DD4B4037128BE02E9EBD28",
+      );
+      "sourceTree" = "<group>";
+    };
+    "C96FF30416382F51187259A4" = {
+      "isa" = "PBXSourcesBuildPhase";
+      "buildActionMask" = "2147483647";
+      "files" = (
+        "B7A1D6E831C479F78C897056",
+        "B7E4B36ED5FCCD3EB7612A01",
+        "E048BD1D9FA76D3B456CE2B8",
+        "42750A1D08B7EC3A371CE0E8",
+        "A5B126568D9A00830245D547",
+      );
+      "runOnlyForDeploymentPostprocessing" = "0";
+    };
+    "95A128492D24359E951A6444" = {
+      "isa" = "PBXFrameworksBuildPhase";
+      "buildActionMask" = "2147483647";
+      "files" = (
+      );
+      "runOnlyForDeploymentPostprocessing" = "0";
+    };
+    "BC805A89160485EED7A13DFE" = {
+      "isa" = "PBXResourcesBuildPhase";
+      "buildActionMask" = "2147483647";
+      "files" = (
+        "83DA8083B9BD8A94B98B9482",
+        "8F5C8B17FA73B8B290B058CA",
+        "8F9ED1B89582662972867F0A",
+        "C7EFF6ECC58908D1C1E1B087",
+        "3E9D3FEEFBC82912EA9DF7D7",
+        "CF4414769D5F3E874C734145",
+        "128A1361E7EFDE60FE55EA42",
+        "1D085CBD4D87DA087790D381",
+        "B6200888111C66D343EF06D9",
+        "0B97A13BDE01E805C1FC2F99",
+        "F3AE36DCDF64646C04D13D31",
+        "FEDF5AC9D2EB92BBD5A8928F",
+        "78D507598A954EBBE60079C7",
+      );
+      "runOnlyForDeploymentPostprocessing" = "0";
+    };
+    "3A56CD3374AAE893139A8290" = {
+      "isa" = "XCBuildConfiguration";
+      "buildSettings" = {
+        "ALWAYS_SEARCH_USER_PATHS" = "NO";
+        "CLANG_ENABLE_MODULES" = "YES";
+        "CLANG_ENABLE_OBJC_ARC" = "YES";
+        "SDKROOT" = "iphoneos";
+        "IPHONEOS_DEPLOYMENT_TARGET" = "15.0";
+        "SWIFT_VERSION" = "5.0";
+        "DEBUG_INFORMATION_FORMAT" = "dwarf";
+        "GCC_OPTIMIZATION_LEVEL" = "0";
+        "SWIFT_OPTIMIZATION_LEVEL" = "-Onone";
+        "ENABLE_STRICT_OBJC_MSGSEND" = "YES";
+        "CLANG_WARN_UNREACHABLE_CODE" = "YES";
+        "CLANG_WARN_DOCUMENTATION_COMMENTS" = "YES";
+        "SWIFT_ACTIVE_COMPILATION_CONDITIONS" = "DEBUG";
+        "ONLY_ACTIVE_ARCH" = "YES";
+      };
+      "name" = "Debug";
+    };
+    "E7AD2E221140EFEF86421C4B" = {
+      "isa" = "XCBuildConfiguration";
+      "buildSettings" = {
+        "ASSETCATALOG_COMPILER_APPICON_NAME" = "AppIcon";
+        "CODE_SIGN_STYLE" = "Automatic";
+        "CURRENT_PROJECT_VERSION" = "1";
+        "GENERATE_INFOPLIST_FILE" = "NO";
+        "INFOPLIST_FILE" = "MusicPlayer/Info.plist";
+        "LD_RUNPATH_SEARCH_PATHS" = (
+          "$(inherited)",
+          "@executable_path/Frameworks",
+        );
+        "MARKETING_VERSION" = "1.0";
+        "PRODUCT_BUNDLE_IDENTIFIER" = "kz.kbtu.karasyerassyl.musicplayer";
+        "PRODUCT_NAME" = "$(TARGET_NAME)";
+        "SWIFT_VERSION" = "5.0";
+        "TARGETED_DEVICE_FAMILY" = "1";
+        "SUPPORTED_PLATFORMS" = "iphoneos iphonesimulator";
+        "SUPPORTS_MACCATALYST" = "NO";
+        "ENABLE_PREVIEWS" = "NO";
+      };
+      "name" = "Debug";
+    };
+    "5BA6F5869621B45247C9C867" = {
+      "isa" = "XCBuildConfiguration";
+      "buildSettings" = {
+        "ALWAYS_SEARCH_USER_PATHS" = "NO";
+        "CLANG_ENABLE_MODULES" = "YES";
+        "CLANG_ENABLE_OBJC_ARC" = "YES";
+        "SDKROOT" = "iphoneos";
+        "IPHONEOS_DEPLOYMENT_TARGET" = "15.0";
+        "SWIFT_VERSION" = "5.0";
+        "DEBUG_INFORMATION_FORMAT" = "dwarf-with-dsym";
+        "GCC_OPTIMIZATION_LEVEL" = "s";
+        "SWIFT_OPTIMIZATION_LEVEL" = "-O";
+        "ENABLE_STRICT_OBJC_MSGSEND" = "YES";
+        "CLANG_WARN_UNREACHABLE_CODE" = "YES";
+        "CLANG_WARN_DOCUMENTATION_COMMENTS" = "YES";
+      };
+      "name" = "Release";
+    };
+    "91D43F3CDB64AB74BF61434D" = {
+      "isa" = "XCBuildConfiguration";
+      "buildSettings" = {
+        "ASSETCATALOG_COMPILER_APPICON_NAME" = "AppIcon";
+        "CODE_SIGN_STYLE" = "Automatic";
+        "CURRENT_PROJECT_VERSION" = "1";
+        "GENERATE_INFOPLIST_FILE" = "NO";
+        "INFOPLIST_FILE" = "MusicPlayer/Info.plist";
+        "LD_RUNPATH_SEARCH_PATHS" = (
+          "$(inherited)",
+          "@executable_path/Frameworks",
+        );
+        "MARKETING_VERSION" = "1.0";
+        "PRODUCT_BUNDLE_IDENTIFIER" = "kz.kbtu.karasyerassyl.musicplayer";
+        "PRODUCT_NAME" = "$(TARGET_NAME)";
+        "SWIFT_VERSION" = "5.0";
+        "TARGETED_DEVICE_FAMILY" = "1";
+        "SUPPORTED_PLATFORMS" = "iphoneos iphonesimulator";
+        "SUPPORTS_MACCATALYST" = "NO";
+        "ENABLE_PREVIEWS" = "NO";
+      };
+      "name" = "Release";
+    };
+    "6D6CE91E32EB5B8E30DAF328" = {
+      "isa" = "XCConfigurationList";
+      "buildConfigurations" = (
+        "3A56CD3374AAE893139A8290",
+        "5BA6F5869621B45247C9C867",
+      );
+      "defaultConfigurationIsVisible" = "0";
+      "defaultConfigurationName" = "Release";
+    };
+    "007F74D199B64DB90BB7DA51" = {
+      "isa" = "XCConfigurationList";
+      "buildConfigurations" = (
+        "E7AD2E221140EFEF86421C4B",
+        "91D43F3CDB64AB74BF61434D",
+      );
+      "defaultConfigurationIsVisible" = "0";
+      "defaultConfigurationName" = "Release";
+    };
+    "6348E4E761EF81B03A9BFC24" = {
+      "isa" = "PBXNativeTarget";
+      "buildConfigurationList" = "007F74D199B64DB90BB7DA51";
+      "buildPhases" = (
+        "C96FF30416382F51187259A4",
+        "95A128492D24359E951A6444",
+        "BC805A89160485EED7A13DFE",
+      );
+      "buildRules" = (
+      );
+      "dependencies" = (
+      );
+      "name" = "MusicPlayer";
+      "productName" = "MusicPlayer";
+      "productReference" = "A2B48B8798E44247609507D1";
+      "productType" = "com.apple.product-type.application";
+    };
+    "52C4B1AEB8000A3B16D6D097" = {
+      "isa" = "PBXProject";
+      "attributes" = {
+        "BuildIndependentTargetsInParallel" = "YES";
+        "LastUpgradeCheck" = "1600";
+        "TargetAttributes" = {
+          "6348E4E761EF81B03A9BFC24" = {
+            "CreatedOnToolsVersion" = "16.0";
+          };
+        };
+      };
+      "buildConfigurationList" = "6D6CE91E32EB5B8E30DAF328";
+      "compatibilityVersion" = "Xcode 14.0";
+      "developmentRegion" = "en";
+      "hasScannedForEncodings" = "0";
+      "knownRegions" = (
+        "en",
+        "Base",
+      );
+      "mainGroup" = "35D1148E053C9E8C48E557DB";
+      "productRefGroup" = "88DD4B4037128BE02E9EBD28";
+      "projectDirPath" = "";
+      "projectRoot" = "";
+      "targets" = (
+        "6348E4E761EF81B03A9BFC24",
+      );
+    };
+  };
+  "rootObject" = "52C4B1AEB8000A3B16D6D097";
+}
