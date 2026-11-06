@@ -1,0 +1,177 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fe5-1d-a78">
+    <device id="retina6_12" orientation="portrait" appearance="light" />
+    <dependencies>
+        <deployment identifier="iOS" />
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084" />
+        <capability name="Safe area layout guides" minToolsVersion="9.0" />
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0" />
+    </dependencies>
+    <scenes>
+        <scene sceneID="325-41-759">
+            <objects>
+                <viewController id="fe5-1d-a78" customClass="FavoritesViewController" customModule="FavoritesList" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="d1d-09-1d6">
+                        <rect key="frame" x="0" y="0" width="393" height="852" />
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" />
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="108" allowsSelection="NO" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="a54-d9-6c0" userLabel="Favorite films table">
+                                <rect key="frame" x="0" y="59" width="393" height="759" />
+                                <color key="backgroundColor" red="0.9803921568627451" green="0.9686274509803922" blue="0.9450980392156862" alpha="1" colorSpace="custom" customColorSpace="sRGB" />
+                                <color key="separatorColor" red="0.8980392156862745" green="0.8705882352941177" blue="0.8196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB" />
+                                <inset key="separatorInset" minX="98" minY="0.0" maxX="20" maxY="0.0" />
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="17e-e9-5a7" userLabel="Film collection header">
+                                    <rect key="frame" x="0" y="0" width="393" height="124" />
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" />
+                                    <subviews>
+                                        <stackView axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="e64-06-04b">
+                                            <rect key="frame" x="20" y="21.5" width="353" height="81" />
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="CINEMA LIBRARY" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="1" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="86a-f7-d44">
+                                                    <rect key="frame" x="0" y="0" width="353" height="13" />
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="11" />
+                                                    <color key="textColor" red="0.6274509803921569" green="0.33725490196078434" blue="0.1843137254901961" alpha="1" colorSpace="custom" customColorSpace="sRGB" />
+                                                    <nil key="highlightedColor" />
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Favorite Films" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="1" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e65-ae-bc6">
+                                                    <rect key="frame" x="0" y="18" width="353" height="41" />
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="34" />
+                                                    <color key="textColor" red="0.09411764705882353" green="0.16862745098039217" blue="0.14901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB" />
+                                                    <nil key="highlightedColor" />
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="20 films · Karas Yerassyl" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="1" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="668-45-b60">
+                                                    <rect key="frame" x="0" y="64" width="353" height="17" />
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14" />
+                                                    <color key="textColor" red="0.3215686274509804" green="0.3764705882352941" blue="0.35294117647058826" alpha="1" colorSpace="custom" customColorSpace="sRGB" />
+                                                    <nil key="highlightedColor" />
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.9372549019607843" green="0.9098039215686274" blue="0.8588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB" />
+                                    <constraints>
+                                        <constraint firstAttribute="leading" id="ea9-8f-00d" firstItem="e64-06-04b" secondItem="17e-e9-5a7" secondAttribute="leading" constant="20" />
+                                        <constraint firstAttribute="trailing" id="664-17-cf5" firstItem="17e-e9-5a7" secondItem="e64-06-04b" secondAttribute="trailing" constant="20" />
+                                        <constraint firstAttribute="centerY" id="6eb-ec-c14" firstItem="e64-06-04b" secondItem="17e-e9-5a7" secondAttribute="centerY" />
+                                    </constraints>
+                                </view>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="FavoriteCell" id="5e9-e3-8b7" customClass="FavoriteCell" customModule="FavoritesList" customModuleProvider="target" userLabel="Favorite film prototype">
+                                        <rect key="frame" x="0" y="124" width="393" height="108" />
+                                        <autoresizingMask key="autoresizingMask" />
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5e9-e3-8b7" id="e5c-50-6dd">
+                                            <rect key="frame" x="0" y="0" width="393" height="108" />
+                                            <autoresizingMask key="autoresizingMask" />
+                                            <subviews>
+                                                <stackView axis="horizontal" alignment="center" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="aed-0e-cd1" userLabel="Poster and details">
+                                                    <rect key="frame" x="20" y="12" width="353" height="84" />
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="film_hacksaw_ridge" translatesAutoresizingMaskIntoConstraints="NO" id="f21-35-562" userLabel="Film poster">
+                                                            <rect key="frame" x="0" y="0" width="64" height="84" />
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" id="4e1-8a-261" constant="64" />
+                                                                <constraint firstAttribute="height" id="1a2-c5-902" constant="84" />
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                    <real key="value" value="8" />
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </imageView>
+                                                        <stackView axis="vertical" alignment="leading" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="909-8c-93e" userLabel="Title, subtitle and rating">
+                                                            <rect key="frame" x="78" y="10.5" width="275" height="63" />
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Hacksaw Ridge" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ded-17-22e">
+                                                                    <rect key="frame" x="0" y="0" width="275" height="22" />
+                                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18" />
+                                                                    <color key="textColor" red="0.09411764705882353" green="0.16862745098039217" blue="0.14901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB" />
+                                                                    <nil key="highlightedColor" />
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="2016 · War drama" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="720-6e-660">
+                                                                    <rect key="frame" x="0" y="27" width="275" height="17" />
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="14" />
+                                                                    <color key="textColor" red="0.3215686274509804" green="0.3764705882352941" blue="0.35294117647058826" alpha="1" colorSpace="custom" customColorSpace="sRGB" />
+                                                                    <nil key="highlightedColor" />
+                                                                </label>
+                                                                <stackView axis="horizontal" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="212-a7-c42" userLabel="Five rating symbols">
+                                                                    <rect key="frame" x="0" y="49" width="86" height="14" />
+                                                                    <subviews>
+                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="a82-96-cf2" userLabel="Star 1">
+                                                                            <rect key="frame" x="0" y="0" width="14" height="14" />
+                                                                            <color key="tintColor" red="0.6274509803921569" green="0.33725490196078434" blue="0.1843137254901961" alpha="1" colorSpace="custom" customColorSpace="sRGB" />
+                                                                        </imageView>
+                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="926-01-fd3" userLabel="Star 2">
+                                                                            <rect key="frame" x="18" y="0" width="14" height="14" />
+                                                                            <color key="tintColor" red="0.6274509803921569" green="0.33725490196078434" blue="0.1843137254901961" alpha="1" colorSpace="custom" customColorSpace="sRGB" />
+                                                                        </imageView>
+                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="66a-ec-c27" userLabel="Star 3">
+                                                                            <rect key="frame" x="36" y="0" width="14" height="14" />
+                                                                            <color key="tintColor" red="0.6274509803921569" green="0.33725490196078434" blue="0.1843137254901961" alpha="1" colorSpace="custom" customColorSpace="sRGB" />
+                                                                        </imageView>
+                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="3da-6d-1fc" userLabel="Star 4">
+                                                                            <rect key="frame" x="54" y="0" width="14" height="14" />
+                                                                            <color key="tintColor" red="0.6274509803921569" green="0.33725490196078434" blue="0.1843137254901961" alpha="1" colorSpace="custom" customColorSpace="sRGB" />
+                                                                        </imageView>
+                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="582-a7-c1b" userLabel="Star 5">
+                                                                            <rect key="frame" x="72" y="0" width="14" height="14" />
+                                                                            <color key="tintColor" red="0.6274509803921569" green="0.33725490196078434" blue="0.1843137254901961" alpha="1" colorSpace="custom" customColorSpace="sRGB" />
+                                                                        </imageView>
+                                                                    </subviews>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" id="ef4-5a-c5d" constant="86" />
+                                                                        <constraint firstAttribute="height" id="26f-50-423" constant="14" />
+                                                                    </constraints>
+                                                                </stackView>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" id="82a-44-680" firstItem="ded-17-22e" secondItem="909-8c-93e" secondAttribute="width" />
+                                                                <constraint firstAttribute="width" id="8c4-34-5e3" firstItem="720-6e-660" secondItem="909-8c-93e" secondAttribute="width" />
+                                                            </constraints>
+                                                        </stackView>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="top" id="82e-3f-093" firstItem="aed-0e-cd1" secondItem="e5c-50-6dd" secondAttribute="top" constant="12" />
+                                                <constraint firstAttribute="leading" id="493-83-d82" firstItem="aed-0e-cd1" secondItem="e5c-50-6dd" secondAttribute="leading" constant="20" />
+                                                <constraint firstAttribute="bottom" id="d27-c5-64f" firstItem="e5c-50-6dd" secondItem="aed-0e-cd1" secondAttribute="bottom" constant="12" />
+                                                <constraint firstAttribute="trailing" id="334-5d-6c6" firstItem="e5c-50-6dd" secondItem="aed-0e-cd1" secondAttribute="trailing" constant="20" />
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.9803921568627451" green="0.9686274509803922" blue="0.9450980392156862" alpha="1" colorSpace="custom" customColorSpace="sRGB" />
+                                        <connections>
+                                            <outlet property="posterImageView" destination="f21-35-562" id="cdf-6c-f09" />
+                                            <outlet property="filmTitleLabel" destination="ded-17-22e" id="715-2f-056" />
+                                            <outlet property="subtitleLabel" destination="720-6e-660" id="fd4-46-7e4" />
+                                            <outlet property="firstStarImageView" destination="a82-96-cf2" id="930-b2-a08" />
+                                            <outlet property="secondStarImageView" destination="926-01-fd3" id="776-0f-0cc" />
+                                            <outlet property="thirdStarImageView" destination="66a-ec-c27" id="c32-90-ac8" />
+                                            <outlet property="fourthStarImageView" destination="3da-6d-1fc" id="808-0c-3c5" />
+                                            <outlet property="fifthStarImageView" destination="582-a7-c1b" id="172-e4-8ef" />
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="fe5-1d-a78" id="800-f6-c3e" />
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0ac-a4-25c" />
+                        <color key="backgroundColor" red="0.9372549019607843" green="0.9098039215686274" blue="0.8588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB" />
+                        <constraints>
+                            <constraint firstAttribute="top" id="03f-81-97a" firstItem="a54-d9-6c0" secondItem="0ac-a4-25c" secondAttribute="top" />
+                            <constraint firstAttribute="leading" id="738-78-4b8" firstItem="a54-d9-6c0" secondItem="0ac-a4-25c" secondAttribute="leading" />
+                            <constraint firstAttribute="trailing" id="d87-6b-c4c" firstItem="a54-d9-6c0" secondItem="0ac-a4-25c" secondAttribute="trailing" />
+                            <constraint firstAttribute="bottom" id="46a-02-05c" firstItem="a54-d9-6c0" secondItem="0ac-a4-25c" secondAttribute="bottom" />
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="493-8b-ba8" userLabel="First Responder" sceneMemberID="firstResponder" />
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="film_hacksaw_ridge" width="64" height="84" />
+        <image name="star.fill" catalog="system" width="20" height="19" />
+    </resources>
+</document>
