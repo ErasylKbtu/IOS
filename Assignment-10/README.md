@@ -19,6 +19,6 @@ Open `FavoritesNavigator.xcodeproj` in Xcode, choose the **FavoritesNavigator** 
 The ratings are sample personal selections. The geometric film illustrations were created for this project.
 
 ## Screenshots
-
-<img width="589" height="1280" alt="image" src="https://github.com/user-attachments/assets/ee575c9c-aa79-4b32-82d5-aa11c06b53a0" />
+<img width="589" height="1280" alt="image" src="https://github.com/user-attachments/assets/39f55b38-b65d-4e45-88c2-6e490b01ab72" />
 <img width="589" height="1280" alt="image" src="https://github.com/user-attachments/assets/02f2238c-7a11-4c25-9167-4c7bc0d72c02" />
+<img width="589" height="1280" alt="image" src="https://github.com/user-attachments/assets/ee575c9c-aa79-4b32-82d5-aa11c06b53a0" />
