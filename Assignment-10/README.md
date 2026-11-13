@@ -20,24 +20,5 @@ The ratings are sample personal selections. The geometric film illustrations wer
 
 ## Screenshots
 
-<!-- screenshots:start -->
-
-Simulator screenshots are pending. Run the capture command on a Mac to insert the list, detail, launch screen and Home Screen screenshots here.
-
-<!-- screenshots:end -->
-
-## Capture screenshots on a Mac
-
-From this folder, run the following command in Terminal with Xcode and compatible iOS Simulator runtimes installed.
-
-```bash
-python3 scripts/capture_screenshots.py
-```
-
-The script builds the project and guides capture on iPhone SE (3rd generation) and iPhone 16 Pro Max. Follow the prompts to capture the list, select a movie for Detail, inspect the light and dark Launch Screen, and show the app icon on the Home Screen. For the launch image, confirm that the centered logo is actually visible. If the runtime cannot hold the launch screen, the script accepts a PNG screenshot of the corresponding LaunchScreen storyboard preview in Xcode.
-
-After every required image is available, the script saves them to `Screenshots/` and embeds them above. Include that folder and the updated README in the GitHub commit.
-
-Before submission, check Back and edge-swipe navigation, the complete description of a film with a long title, and the console for Auto Layout warnings. Open both storyboards in Interface Builder to check constraints on both devices. Source and resource checks were completed during preparation. The Xcode build and Simulator checks must be completed on a Mac.
-
-Submit the unpacked project directory in the GitHub repository with this README, the screenshots and `.gitignore`.
+<img width="589" height="1280" alt="image" src="https://github.com/user-attachments/assets/ee575c9c-aa79-4b32-82d5-aa11c06b53a0" />
+<img width="589" height="1280" alt="image" src="https://github.com/user-attachments/assets/02f2238c-7a11-4c25-9167-4c7bc0d72c02" />
