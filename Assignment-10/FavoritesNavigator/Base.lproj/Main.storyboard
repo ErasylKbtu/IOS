@@ -1,0 +1,281 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="82b-1c-837">
+    <device id="retina6_12" orientation="portrait" appearance="light" />
+    <dependencies>
+        <deployment identifier="iOS" />
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084" />
+        <capability name="Safe area layout guides" minToolsVersion="9.0" />
+        <capability name="Named colors" minToolsVersion="9.0" />
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0" />
+    </dependencies>
+    <scenes>
+        <scene sceneID="77d-f0-13f">
+            <objects>
+                <navigationController id="82b-1c-837" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="ae3-bd-a61">
+                        <rect key="frame" x="0" y="59" width="393" height="96" />
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" />
+                        <color key="tintColor" name="Accent" />
+                        <navigationBarAppearance key="standardAppearance">
+                            <color key="backgroundColor" name="AppBackground" />
+                            <textAttributes key="titleTextAttributes">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17" />
+                                <color key="textColor" name="PrimaryText" />
+                            </textAttributes>
+                            <textAttributes key="largeTitleTextAttributes">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="34" />
+                                <color key="textColor" name="PrimaryText" />
+                            </textAttributes>
+                        </navigationBarAppearance>
+                        <navigationBarAppearance key="scrollEdgeAppearance">
+                            <color key="backgroundColor" name="AppBackground" />
+                            <textAttributes key="titleTextAttributes">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17" />
+                                <color key="textColor" name="PrimaryText" />
+                            </textAttributes>
+                            <textAttributes key="largeTitleTextAttributes">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="34" />
+                                <color key="textColor" name="PrimaryText" />
+                            </textAttributes>
+                        </navigationBarAppearance>
+                        <navigationBarAppearance key="compactAppearance">
+                            <color key="backgroundColor" name="AppBackground" />
+                            <textAttributes key="titleTextAttributes">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17" />
+                                <color key="textColor" name="PrimaryText" />
+                            </textAttributes>
+                            <textAttributes key="largeTitleTextAttributes">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="34" />
+                                <color key="textColor" name="PrimaryText" />
+                            </textAttributes>
+                        </navigationBarAppearance>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="1d3-40-014" kind="relationship" relationship="rootViewController" id="f94-df-8aa" />
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="107-b5-d8b" userLabel="First Responder" sceneMemberID="firstResponder" />
+            </objects>
+        </scene>
+        <scene sceneID="7c9-df-ca5">
+            <objects>
+                <viewController id="1d3-40-014" customClass="FavoritesViewController" customModule="FavoritesNavigator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="327-e4-93a">
+                        <rect key="frame" x="0" y="0" width="393" height="852" />
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" />
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="98" allowsSelection="YES" sectionHeaderHeight="28" sectionFooterHeight="28" contentInsetAdjustmentBehavior="never" translatesAutoresizingMaskIntoConstraints="NO" id="a23-7a-cdf">
+                                <rect key="frame" x="0" y="155" width="393" height="663" />
+                                <color key="backgroundColor" name="AppBackground" />
+                                <color key="separatorColor" name="Separator" />
+                                <inset key="separatorInset" minX="92" minY="0" maxX="20" maxY="0" />
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="FavoriteCell" id="ac6-db-ebf" customClass="FavoriteCell" customModule="FavoritesNavigator" customModuleProvider="target">
+                                        <rect key="frame" x="0" y="0" width="393" height="98" />
+                                        <autoresizingMask key="autoresizingMask" />
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ac6-db-ebf" id="6a9-f8-2e4">
+                                            <rect key="frame" x="0" y="0" width="361" height="98" />
+                                            <autoresizingMask key="autoresizingMask" />
+                                            <subviews>
+                                                <stackView axis="horizontal" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="7ce-4b-8f1">
+                                                    <rect key="frame" x="20" y="12" width="325" height="74" />
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="film_hacksaw_ridge" translatesAutoresizingMaskIntoConstraints="NO" id="01b-e2-3ef">
+                                                            <rect key="frame" x="0" y="0" width="56" height="74" />
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" id="d2e-5d-260" constant="56" />
+                                                                <constraint firstAttribute="height" id="b0d-a8-7f2" constant="74" />
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                    <real key="value" value="7" />
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Hacksaw Ridge" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1f6-57-2d1">
+                                                            <rect key="frame" x="72" y="26" width="253" height="22" />
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18" />
+                                                            <color key="textColor" name="PrimaryText" />
+                                                            <nil key="highlightedColor" />
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="top" id="811-1e-904" firstItem="7ce-4b-8f1" secondItem="6a9-f8-2e4" secondAttribute="top" constant="12" />
+                                                <constraint firstAttribute="leading" id="329-f4-777" firstItem="7ce-4b-8f1" secondItem="6a9-f8-2e4" secondAttribute="leading" constant="20" />
+                                                <constraint firstAttribute="bottom" id="f3f-04-179" firstItem="6a9-f8-2e4" secondItem="7ce-4b-8f1" secondAttribute="bottom" constant="12" />
+                                                <constraint firstAttribute="trailing" id="e79-3d-817" firstItem="6a9-f8-2e4" secondItem="7ce-4b-8f1" secondAttribute="trailing" constant="16" />
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" name="AppBackground" />
+                                        <connections>
+                                            <outlet property="posterImageView" destination="01b-e2-3ef" id="f39-54-72c" />
+                                            <outlet property="filmTitleLabel" destination="1f6-57-2d1" id="71f-a5-759" />
+                                            <segue destination="715-e3-7d2" kind="show" identifier="showDetail" id="fd0-92-522" />
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="1d3-40-014" id="2e0-3f-be0" />
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="b0f-34-a81" />
+                        <color key="backgroundColor" name="AppBackground" />
+                        <constraints>
+                            <constraint firstAttribute="leading" id="166-7c-f5e" firstItem="a23-7a-cdf" secondItem="b0f-34-a81" secondAttribute="leading" />
+                            <constraint firstAttribute="trailing" id="569-56-d1a" firstItem="a23-7a-cdf" secondItem="b0f-34-a81" secondAttribute="trailing" />
+                            <constraint firstAttribute="top" id="513-5f-4c3" firstItem="a23-7a-cdf" secondItem="b0f-34-a81" secondAttribute="top" />
+                            <constraint firstAttribute="bottom" id="1bc-ef-312" firstItem="a23-7a-cdf" secondItem="b0f-34-a81" secondAttribute="bottom" />
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="My Movies" largeTitleDisplayMode="always" id="d71-eb-4a3" />
+                    <connections>
+                        <outlet property="tableView" destination="a23-7a-cdf" id="3f0-f9-946" />
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e37-75-b74" userLabel="First Responder" sceneMemberID="firstResponder" />
+            </objects>
+        </scene>
+        <scene sceneID="c59-0b-3ae">
+            <objects>
+                <viewController id="715-e3-7d2" customClass="DetailViewController" customModule="FavoritesNavigator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="b01-75-415">
+                        <rect key="frame" x="0" y="0" width="393" height="852" />
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" />
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" alwaysBounceVertical="NO" contentInsetAdjustmentBehavior="never" translatesAutoresizingMaskIntoConstraints="NO" id="03d-1d-570">
+                                <rect key="frame" x="0" y="103" width="393" height="715" />
+                                <subviews>
+                                    <stackView axis="vertical" alignment="leading" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="288-55-f08">
+                                        <rect key="frame" x="20" y="20" width="353" height="564.75" />
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="film_hacksaw_ridge" translatesAutoresizingMaskIntoConstraints="NO" id="50b-c0-c38">
+                                                <rect key="frame" x="0" y="0" width="353" height="264.75" />
+                                                <color key="backgroundColor" name="ArtworkSurface" />
+                                                <constraints>
+                                                    <constraint firstAttribute="height" id="31e-7b-297" firstItem="50b-c0-c38" secondItem="50b-c0-c38" secondAttribute="width" multiplier="3:4" />
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <real key="value" value="16" />
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Hacksaw Ridge" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dfe-73-0cb">
+                                                <rect key="frame" x="0" y="280.75" width="353" height="34" />
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28" />
+                                                <color key="textColor" name="PrimaryText" />
+                                                <nil key="highlightedColor" />
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="2016 · War drama" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d84-21-abe">
+                                                <rect key="frame" x="0" y="330.75" width="353" height="20" />
+                                                <fontDescription key="fontDescription" type="system" pointSize="16" />
+                                                <color key="textColor" name="SecondaryText" />
+                                                <nil key="highlightedColor" />
+                                            </label>
+                                            <stackView axis="horizontal" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="d9f-62-fe2">
+                                                <rect key="frame" x="0" y="366.75" width="114" height="18" />
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="2c5-7c-d3c">
+                                                        <rect key="frame" x="0" y="0" width="18" height="18" />
+                                                        <color key="tintColor" name="Accent" />
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="094-1b-a05">
+                                                        <rect key="frame" x="24" y="0" width="18" height="18" />
+                                                        <color key="tintColor" name="Accent" />
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ea4-07-b76">
+                                                        <rect key="frame" x="48" y="0" width="18" height="18" />
+                                                        <color key="tintColor" name="Accent" />
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="7ef-09-812">
+                                                        <rect key="frame" x="72" y="0" width="18" height="18" />
+                                                        <color key="tintColor" name="Accent" />
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="6c1-96-c1c">
+                                                        <rect key="frame" x="96" y="0" width="18" height="18" />
+                                                        <color key="tintColor" name="Accent" />
+                                                    </imageView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" id="53e-e7-e4b" constant="114" />
+                                                    <constraint firstAttribute="height" id="bf3-fd-deb" constant="18" />
+                                                </constraints>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Desmond Doss joins the army as a medic and refuses to carry a weapon.&#10;During the Battle of Okinawa, his convictions are tested as he tries to rescue wounded soldiers.&#10;The film explores courage, compassion and the cost of staying true to a belief." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4b4-42-036">
+                                                <rect key="frame" x="0" y="400.75" width="353" height="164" />
+                                                <fontDescription key="fontDescription" type="system" pointSize="17" />
+                                                <color key="textColor" name="PrimaryText" />
+                                                <nil key="highlightedColor" />
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" id="12c-07-93e" firstItem="50b-c0-c38" secondItem="288-55-f08" secondAttribute="width" />
+                                            <constraint firstAttribute="width" id="9b9-0f-37d" firstItem="dfe-73-0cb" secondItem="288-55-f08" secondAttribute="width" />
+                                            <constraint firstAttribute="width" id="39d-2b-12a" firstItem="d84-21-abe" secondItem="288-55-f08" secondAttribute="width" />
+                                            <constraint firstAttribute="width" id="8af-85-d8c" firstItem="4b4-42-036" secondItem="288-55-f08" secondAttribute="width" />
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <viewLayoutGuide key="contentLayoutGuide" id="f00-79-43d" />
+                                <viewLayoutGuide key="frameLayoutGuide" id="325-a8-b2c" />
+                                <constraints>
+                                    <constraint firstAttribute="top" id="52e-de-54f" firstItem="288-55-f08" secondItem="f00-79-43d" secondAttribute="top" constant="20" />
+                                    <constraint firstAttribute="leading" id="b24-4d-598" firstItem="288-55-f08" secondItem="f00-79-43d" secondAttribute="leading" constant="20" />
+                                    <constraint firstAttribute="trailing" id="5ae-ed-9a8" firstItem="f00-79-43d" secondItem="288-55-f08" secondAttribute="trailing" constant="20" />
+                                    <constraint firstAttribute="bottom" id="8a6-59-9d9" firstItem="f00-79-43d" secondItem="288-55-f08" secondAttribute="bottom" constant="24" />
+                                    <constraint firstAttribute="width" id="53b-f6-a07" firstItem="288-55-f08" secondItem="325-a8-b2c" secondAttribute="width" constant="-40" />
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="3ee-36-991" />
+                        <color key="backgroundColor" name="AppBackground" />
+                        <constraints>
+                            <constraint firstAttribute="leading" id="fa2-94-05e" firstItem="03d-1d-570" secondItem="3ee-36-991" secondAttribute="leading" />
+                            <constraint firstAttribute="trailing" id="1ce-47-566" firstItem="03d-1d-570" secondItem="3ee-36-991" secondAttribute="trailing" />
+                            <constraint firstAttribute="top" id="11f-02-9df" firstItem="03d-1d-570" secondItem="3ee-36-991" secondAttribute="top" />
+                            <constraint firstAttribute="bottom" id="6a9-0b-a76" firstItem="03d-1d-570" secondItem="3ee-36-991" secondAttribute="bottom" />
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Movie" largeTitleDisplayMode="never" id="ac6-7a-d3e" />
+                    <connections>
+                        <outlet property="posterImageView" destination="50b-c0-c38" id="0e1-39-187" />
+                        <outlet property="filmTitleLabel" destination="dfe-73-0cb" id="ff8-ea-b17" />
+                        <outlet property="subtitleLabel" destination="d84-21-abe" id="828-ef-2d4" />
+                        <outlet property="descriptionLabel" destination="4b4-42-036" id="359-15-6b6" />
+                        <outlet property="firstStarImageView" destination="2c5-7c-d3c" id="48d-7b-8fb" />
+                        <outlet property="secondStarImageView" destination="094-1b-a05" id="621-85-0e3" />
+                        <outlet property="thirdStarImageView" destination="ea4-07-b76" id="867-d0-f56" />
+                        <outlet property="fourthStarImageView" destination="7ef-09-812" id="047-44-959" />
+                        <outlet property="fifthStarImageView" destination="6c1-96-c1c" id="b16-98-08b" />
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="24c-08-a26" userLabel="First Responder" sceneMemberID="firstResponder" />
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="film_hacksaw_ridge" width="256" height="336" />
+        <image name="star.fill" width="20" height="19" catalog="system" />
+        <namedColor name="AppBackground">
+            <color red="0.9803921568627451" green="0.9686274509803922" blue="0.9450980392156862" alpha="1" colorSpace="custom" customColorSpace="sRGB" />
+        </namedColor>
+        <namedColor name="PrimaryText">
+            <color red="0.09411764705882353" green="0.16862745098039217" blue="0.14901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB" />
+        </namedColor>
+        <namedColor name="SecondaryText">
+            <color red="0.3215686274509804" green="0.3764705882352941" blue="0.35294117647058826" alpha="1" colorSpace="custom" customColorSpace="sRGB" />
+        </namedColor>
+        <namedColor name="Accent">
+            <color red="0.6274509803921569" green="0.33725490196078434" blue="0.1843137254901961" alpha="1" colorSpace="custom" customColorSpace="sRGB" />
+        </namedColor>
+        <namedColor name="Separator">
+            <color red="0.8980392156862745" green="0.8705882352941177" blue="0.8196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB" />
+        </namedColor>
+        <namedColor name="ArtworkSurface">
+            <color red="0.9333333333333333" green="0.9098039215686274" blue="0.8627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB" />
+        </namedColor>
+    </resources>
+</document>

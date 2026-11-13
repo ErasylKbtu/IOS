@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="830-24-776" launchScreen="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light" />
+    <dependencies>
+        <deployment identifier="iOS" />
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084" />
+        <capability name="Safe area layout guides" minToolsVersion="9.0" />
+        <capability name="Named colors" minToolsVersion="9.0" />
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0" />
+    </dependencies>
+    <scenes>
+        <scene sceneID="84d-b9-32c">
+            <objects>
+                <viewController id="830-24-776" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="575-c9-bed">
+                        <rect key="frame" x="0" y="0" width="393" height="852" />
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" />
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="LaunchLogo" translatesAutoresizingMaskIntoConstraints="NO" id="733-f6-4bf">
+                                <rect key="frame" x="124.5" y="354" width="144" height="144" />
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="e25-31-ef8" />
+                        <color key="backgroundColor" name="AppBackground" />
+                        <constraints>
+                            <constraint firstAttribute="centerX" id="302-5a-c26" firstItem="733-f6-4bf" secondItem="575-c9-bed" secondAttribute="centerX" />
+                            <constraint firstAttribute="centerY" id="6d4-70-d61" firstItem="733-f6-4bf" secondItem="575-c9-bed" secondAttribute="centerY" />
+                            <constraint firstAttribute="width" id="4cf-1d-b06" firstItem="733-f6-4bf" constant="144" />
+                            <constraint firstAttribute="height" id="dd3-2d-6bc" firstItem="733-f6-4bf" constant="144" />
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d37-a7-055" userLabel="First Responder" sceneMemberID="firstResponder" />
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="LaunchLogo" width="341.3333333333" height="341.3333333333" />
+        <namedColor name="AppBackground">
+            <color red="0.9803921568627451" green="0.9686274509803922" blue="0.9450980392156862" alpha="1" colorSpace="custom" customColorSpace="sRGB" />
+        </namedColor>
+        <namedColor name="PrimaryText">
+            <color red="0.09411764705882353" green="0.16862745098039217" blue="0.14901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB" />
+        </namedColor>
+        <namedColor name="SecondaryText">
+            <color red="0.3215686274509804" green="0.3764705882352941" blue="0.35294117647058826" alpha="1" colorSpace="custom" customColorSpace="sRGB" />
+        </namedColor>
+        <namedColor name="Accent">
+            <color red="0.6274509803921569" green="0.33725490196078434" blue="0.1843137254901961" alpha="1" colorSpace="custom" customColorSpace="sRGB" />
+        </namedColor>
+        <namedColor name="Separator">
+            <color red="0.8980392156862745" green="0.8705882352941177" blue="0.8196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB" />
+        </namedColor>
+        <namedColor name="ArtworkSurface">
+            <color red="0.9333333333333333" green="0.9098039215686274" blue="0.8627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB" />
+        </namedColor>
+    </resources>
+</document>
